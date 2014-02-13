@@ -1,0 +1,90 @@
+{
+  "startMoney" : 120,
+  "life" : 20,
+  "towers" : ["1", "2"],
+  "rounds" : [
+    {
+      "successMoney" : 0,
+      "waves" : [{
+        "startDelay" : 10,
+        "enemys" : ["1", "1", "1", "1", "1", "1"],
+        "spawnDelay" : 120,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["3", "2", "3", "2", "3", "2", "3", "2"],
+        "spawnDelay" : 120,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["1", "2", "3", "2", "4", "2", "1", "5"],
+        "spawnDelay" : 120,
+        "endDelay" : 320
+      }]
+    },{
+      "successMoney" : 0,
+      "waves" : [{
+        "startDelay" : 10,
+        "enemys" : ["1", "2", "1", "2", "1", "2", "1", "2", "1", "2"],
+        "spawnDelay" : 80,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["3", "3", "3", "3", "3", "3"],
+        "spawnDelay" : 60,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["4", "4", "4", "4", "4"],
+        "spawnDelay" : 180,
+        "endDelay" : 320
+      }]
+    },{
+      "successMoney" : 50,
+      "waves" : [{
+        "startDelay" : 10,
+        "enemys" : ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+        "spawnDelay" : 60,
+        "endDelay" : 120
+      },{
+        "startDelay" : 0,
+        "enemys" : ["3", "3", "3", "3", "3", "3"],
+        "spawnDelay" : 60,
+        "endDelay" : 120
+      },{
+        "startDelay" : 0,
+        "enemys" : ["4", "4", "4", "4", "4"],
+        "spawnDelay" : 180,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["5", "5"],
+        "spawnDelay" : 380,
+        "endDelay" : 320
+      }]
+    },{
+      "successMoney" : 50,
+      "waves" : [{
+        "startDelay" : 10,
+        "enemys" : ["2", "2", "4", "2", "2", "4", "2", "2", "2", "2"],
+        "spawnDelay" : 30,
+        "endDelay" : 120
+      },{
+        "startDelay" : 0,
+        "enemys" : ["3", "3", "4", "3", "3", "5"],
+        "spawnDelay" : 30,
+        "endDelay" : 120
+      },{
+        "startDelay" : 0,
+        "enemys" : ["4", "4", "4", "4", "4", "5"],
+        "spawnDelay" : 60,
+        "endDelay" : 320
+      },{
+        "startDelay" : 0,
+        "enemys" : ["5", "5", "5", "5", "5", "5"],
+        "spawnDelay" : 100,
+        "endDelay" : 320
+      }]
+    }
+  ]
+}

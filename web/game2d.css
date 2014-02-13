@@ -1,0 +1,158 @@
+
+body {
+  background-color: #484848;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1, p {
+  color: #334;
+}
+
+canvas{
+  padding: 0;
+  margin: 0;
+}
+
+#towerList{
+  position: absolute;
+  bottom: 0;
+  top : 0;
+  right: 0;
+}
+.tower{
+  position: relative;
+  /*float: left;*/
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+}
+
+.towerButton{
+  position: absolute;
+  padding: 20px;
+  margin: -20px;
+  border-radius: 25px;
+}
+
+.towerButton.towerSell{
+  border: 1px solid rgba(255, 30, 30, 0.8);
+  background-color: rgba(220, 20, 20, 0.4);
+  animation: towerSell 200ms;
+  -webkit-animation: towerSell 200ms;
+  transform: translateY(32px);
+  -webkit-transform: translateY(32px);
+}
+
+@keyframes towerSell{
+  0%{
+    transform: scale(0.3, 0.3) scaletranslateY(0px);
+    -webkit-transform: scale(0.1, 0.1) translateY(0px);
+  }
+  100%{
+    transform: scale(1, 1) translateY(32px);
+    -webkit-transform: scale(1, 1) translateY(32px);
+  }
+}
+@-webkit-keyframes towerSell{
+  0%{
+    transform: scale(0.1, 0.1) translateY(0px);
+    -webkit-transform: scale(0.1, 0.1) translateY(0px);
+  }
+  100%{
+    transform: scale(1, 1) translateY(32px);
+    -webkit-transform: scale(1, 1) translateY(32px);
+  }
+}
+
+.towerButton.towerUpgrade{
+  border: 1px solid rgba(30, 255, 30, 0.8);
+  background-color: rgba(30, 255, 20, 0.4);
+  animation: towerUpgrade 200ms;
+  -webkit-animation: towerUpgrade 200ms;
+  transform: translateY(-32px);
+  -webkit-transform: translateY(-32px);
+}
+
+.towerButton.towerUpgrade.disable{
+  border: 1px solid rgba(50, 60, 50, 0.8);
+  background-color: rgba(50, 60, 50, 0.4);
+}
+
+@keyframes towerUpgrade{
+  0%{
+    transform: scale(0.1, 0.1) translateY(0px);
+    -webkit-transform: scale(0.1, 0.1) translateY(0px);
+  }
+  100%{
+    transform: scale(1, 1) translateY(-32px);
+    -webkit-transform: scale(1, 1) translateY(-32px);
+  }
+}
+@-webkit-keyframes towerUpgrade{
+  0%{
+    transform: scale(1, 1) scale(0.1, 0.1) translateY(0px);
+    -webkit-transform: scale(1, 1) scale(0.1, 0.1) translateY(0px);
+  }
+  100%{
+    transform: translateY(-32px);
+    -webkit-transform: translateY(-32px);
+  }
+}
+
+/* GUI */
+/* Double Speed Button */
+.gui{
+  position: absolute;
+}
+.gui.bottom{
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.doubleSpeed{
+  position: relative;
+  float: left;
+  width: 57px;
+  height: 43px;
+  padding: 10px 16px;
+  background: transparent url(images/gui/doubleSpeed.png) center center no-repeat;
+}
+.doubleSpeed.aktive{
+  background-image: url(images/gui/doubleSpeedAktiv.png);
+}
+
+.startButton{
+  position: relative;
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin: 10px 10px;
+  border-radius: 40px;
+  background: transparent url(images/gui/startButton.png) center center no-repeat;
+}
+
+.startButton.animate{
+  animation: startButton 2.5s infinite;
+  -webkit-animation: startButton 2.5s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes startButton{
+  0%{
+    box-shadow: 0px 0px 1px -1px #FFF;
+  }
+  50%{
+    box-shadow: 0px 0px 15px -1px #FFF;
+  }
+  100%{
+    box-shadow: 0px 0px 1px -1px #FFF;
+  }
+}

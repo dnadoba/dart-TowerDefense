@@ -1,0 +1,14 @@
+[{
+  "class" : "SimpleMap",
+  "name" : "Simple Map",
+  "width" : 2072,
+  "height" : 1024,
+  "startX" : 128,
+  "startY" : 128,
+  "endX" : 1880,
+  "endY" : 832,
+  "way" : [
+    [0.0, 32.0]
+  ],
+  "levels" : 1
+}]
